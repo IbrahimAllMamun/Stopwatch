@@ -30,6 +30,17 @@ function stopwatch() {
     label = ('0' + hour).slice(-2) + ":" + ('0' + minute).slice(-2) + ":" + ('0' + secend).slice(-2);
 
     display.innerHTML = label;
+
+    lap.onclick = function () {
+        document.getElementsByClassName("lap-time")[0].innerHTML +=
+          "<p>" +
+          ("0" + hour).slice(-2) +
+          ":" +
+          ("0" + minute).slice(-2) +
+          ":" +
+          ("0" + secend).slice(-2) +
+          "</p>";
+      };
 }
 
 function Start() {
@@ -45,9 +56,6 @@ function Start() {
     }
 }
 
-function Lap() {
-    lapTime[0].innerHTML += "<p>" + label + "</p>";
-}
 
 function Reset() {
     hour = 0
@@ -55,7 +63,7 @@ function Reset() {
     secend = 0
     paused = false
     lapCount = 0
-
+    
     window.clearInterval(myInterval);
     display.innerHTML = "00:00:00"
     start.innerHTML = "Start";
@@ -64,23 +72,23 @@ function Reset() {
 
 start.addEventListener("click", Start);
 reset.addEventListener("click", Reset);
-lap.addEventListener("click", Lap);
+// lap.addEventListener("click", Lap);
 
 
 
 // {
-//     const subject = document.querySelector('#subject');
+    //     const subject = document.querySelector('#subject');
 
 //     const positionSelect = document.querySelector('#position');
 
     // subject.insertAdjacentHTML('afterbegin', '<strong>inserted text</strong>');
-
-
-
-
-
-
-// document.getElementsByClassName("lap-time")[0].innerHTML += "<p>"+('0' + hour).slice(-2) + ":" + ('0' + minute).slice(-2) + ":" + ('0' + secend).slice(-2)+"</p>";
+    
+    
+    
+    
+    
+    
+    // document.getElementsByClassName("lap-time")[0].innerHTML += "<p>"+('0' + hour).slice(-2) + ":" + ('0' + minute).slice(-2) + ":" + ('0' + secend).slice(-2)+"</p>";
 
 // document.getElementById('lap-time').insertAdjacentHTML('beforeend', '<div id="idChild"> $("0" + hour).slice(-2) + ":" + ('0' + minute).slice(-2) + ":" + ( + secend).slice(-2)) </div>');
 
@@ -88,3 +96,7 @@ lap.addEventListener("click", Lap);
 // const lapTime = document.getElementsByClassName('lap-time')[1]
 // var tempDiv = document.createElement('div');
 // tempDiv.innerHTML = "<p>"+('0' + hour).slice(-2) + ":" + ('0' + minute).slice(-2) + ":" + ('0' + secend).slice(-2)+"</p>"
+
+// function Lap() {
+//     lapTime[0].innerHTML += "<p>" + label + "</p>";
+// }
