@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  background: rgb(255 252 206);
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+p {
+    font-size: 2rem;
+    color: #261e29;
+    font-weight: 600;
+    height: 3rem;
+    width: 20rem;
+    padding: 2px;
+    margin: 5px;
+    line-height: 30px;
+    border: 2px solid rgb(4, 12, 54);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    display: inline-block;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  min-width: 500px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.main {
+    background: #382c3c;
+  display: flex;
+  height: 30rem;
+  width: 30rem;
+  margin: 20px;
+  padding: 5px;
+  border: 10px solid rgb(255 252 206);
+  border-radius: 30rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px 5px #42224c, inset 0 0 20px 20px #261e29;
+}
+
+.inner {
+  height: fit-content;
+  display: inline-block;
+}
+
+.sub {
+  display: inline-block;
+  min-height: 10rem;
+  margin: 15px;
+  text-align: center;
+}
+
+button {
+    color: aliceblue;
+    background: rgb(29 79 139);
+    height: 7rem;
+    width: 10rem;
+    border: 0px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px 2px rgb(19 39 63);
+}
+
+button:hover {
+    background: rgb(61, 113, 177);
+    transition: background .3s;
+}
+
+.lap-time {
+    height: 26rem;
+    overflow: hidden;
+}
+
+.lap-time-header h2 {
+    color: #261e29;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 4rem;
+}
+
+.big{
+    height: 9.5rem;
+    width: 14rem;
+    font-size: 4rem;
+    background: #4d1c5c;
+    transition: background .3s;
+}
+
+.big:hover {
+    background: #7d2597;
+}
+
+@media screen and (max-width: 768px) {
+  
+
+}
