@@ -32,14 +32,14 @@ function stopwatch() {
     display.innerHTML = label;
 
     lap.onclick = function () {
-        document.getElementsByClassName("lap-time")[0].innerHTML +=
+        document.getElementsByClassName("lap-time")[0].innerHTML =
           "<p>" +
           ("0" + hour).slice(-2) +
           ":" +
           ("0" + minute).slice(-2) +
           ":" +
           ("0" + secend).slice(-2) +
-          "</p>";
+          "</p>" + document.getElementsByClassName("lap-time")[0].innerHTML;
       };
 }
 
